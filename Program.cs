@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace PhotoImporter
 {
@@ -24,11 +25,22 @@ namespace PhotoImporter
 
         static void Main(string[] args)
         {
-            readSDcard();
+            try
+            {
+                readSDcard();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Unexpected error: {ex.Message}");
+                Thread.Sleep(6 * 1000);
+            }
         }
+
 
         public static void readSDcard()
         {
+            Console.WriteLine("Starting photo import - looking for SD card...");
+
             var sdCardRootDirectory = GetSDCardRootDir();
 
             var dir = new DirectoryInfo( Path.Combine(sdCardRootDirectory, "DCIM" ) );
@@ -63,7 +75,6 @@ namespace PhotoImporter
             }
 
             Console.WriteLine("Import process complete.");
-            Console.ReadKey();
         }
 
         /// <summary>
