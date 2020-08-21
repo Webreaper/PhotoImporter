@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GHw1wquafq0YEQlUrSbC2T+qcw68Q0Nk6d1hQGFrUxDbUWxGwB/ebszMh8O6lKHt1bRFWNq9JUK2NuRXNzQwxA==",
+  "success": true,
+  "projectFilePath": "/Users/markotway/LocalCloud/Development/PhotoImporter/PhotoImporter/PhotoImporter.csproj",
+  "expectedPackageFiles": [
+    "/Users/markotway/.nuget/packages/microsoft.netcore.app.runtime.osx-x64/3.1.2/microsoft.netcore.app.runtime.osx-x64.3.1.2.nupkg.sha512",
+    "/Users/markotway/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-x64/3.1.2/microsoft.aspnetcore.app.runtime.osx-x64.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
