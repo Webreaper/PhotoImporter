@@ -131,3 +131,7 @@ $RECYCLE.BIN/
 .DS_Store
 
 _NCrunch*
+.vs/PhotoImporter/xs/UserPrefs.xml
+.vs/PhotoImporter/xs/project-cache/PhotoImporter-Debug.json
+.DS_Store
+.DS_Store
